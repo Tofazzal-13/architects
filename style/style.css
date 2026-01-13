@@ -92,6 +92,7 @@ main> section{
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
 }
+
 .our_feature{
     margin-left: 130px;
     max-width: 530px;
@@ -113,7 +114,31 @@ main> section{
 
 @media screen and (max-width:576px){
     .navbar, 
-    .nav_link{
+    .nav_link,
+    .teams{
         flex-direction: column;
+    }
+    
+    .team_img_container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .our_feature{
+        margin-left: 20px;
+    }
+
+   
+
+
+}
+
+/* medium size responsive */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our_feature{
+        margin-left: 50px auto;
     }
 }
